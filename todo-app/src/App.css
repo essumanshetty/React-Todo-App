@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+html, body {
+  background-color: #f5f5f5;
+}
+input{
+  /* height: 30px; */
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 6px;
+  width: 87%;
+  padding: 8px;
+}
+input:focus {
+  border: 1px solid rgb(160, 160, 238);
+}
+input[type="submit"] {
+  background-color: orange;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  width: 80px;
+  height: 30px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(228, 171, 65);
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  /* border: 1px solid red; */
+
+}
+.container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form-container {
+  position: sticky;
+  top: 10px;
+  /* border: 1px solid red; */
+  z-index: 100;
+}
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  background-color: #fff;
+  filter: drop-shadow(0px 3px 6px #ccc);
+  padding: 8px;
+  border-radius: 6px;
+}
+.list-container h5 {
+  margin-right: 10px;
+}
+button {
+  margin: 0 8px;
+  height: 30px;
+  width: 80px;
+  background-color: orange;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  color: #fff;
+}
+button:hover{
+  cursor: pointer;
+  background-color: rgb(228, 171, 65);
+}
+.delete-btn {
+  margin-right: 0px;
+}
+.todo-desc {
+  max-width: 70%;
+  overflow-wrap: break-word;
+}
+.todo-desc .span{
+  font-size: 1.5rem;
+  border: 0;
+}
